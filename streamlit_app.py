@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import google.generativeai as genai
-import os
+import torch
 
 # Configure the API key securely from Streamlit's secrets
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
